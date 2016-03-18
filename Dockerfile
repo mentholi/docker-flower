@@ -13,5 +13,6 @@ EXPOSE    5555
 ENV       REDIS_HOST redis
 ENV       REDIS_PORT 6379
 ENV       REDIS_DATABASE 0
+ENV       OPENID_AUTH .*@example\.com
 
-CMD       flower --port=5555 --broker=redis://$REDIS_HOST:$REDIS_PORT/$REDIS_DATABASE
+CMD       flower --port=5555 --broker=redis://$REDIS_HOST:$REDIS_PORT/$REDIS_DATABASE --auth=$OPENID_AUTH
