@@ -6,7 +6,7 @@ The redis broker settings can be set via environment variables:
 	REDIS_HOST: Defaults to 'redis', so in case of docker linking this will work out of the box
 	REDIS_PORT: Defaults to 6379
 	REDIS_DATABASE: Defaults to 0
-	OPENID_AUTH: Defaults to ".*@example\.com" See: https://github.com/mher/flower/wiki/Authentication
+	BASIC_AUTH: Defaults to admin:pass See: https://github.com/mher/flower/wiki/Authentication
 
 Example with linking:
 
